@@ -1,0 +1,14 @@
+{
+	"category" : "Speedtests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 4/13/2016 16:10",
+	"instvars" : [
+		"speedtests" ],
+	"name" : "SpeedtestSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

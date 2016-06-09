@@ -1,0 +1,17 @@
+{
+	"category" : "Speedtests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 4/13/2016 16:09",
+	"instvars" : [
+		"dateAndTime",
+		"ping",
+		"download",
+		"upload" ],
+	"name" : "Speedtest",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
