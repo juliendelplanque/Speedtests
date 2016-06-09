@@ -7,17 +7,19 @@ graphWithYBlock: aBlock
 	b extent: 1000 @ 250.
 
 	ds := RTData new.
-	ds interaction popup.
+	ds interaction popupText: [ :speedTest | speedTest asString ].
 	ds dotShape rectangle color: Color blue.
 	ds points: self speedtests.
-	ds connect.
 	ds x: [ :data | data dateAndTime asSeconds - minDate asSeconds ].
 	ds y: aBlock.
 	b add: ds.
+	b addDecorator: (RTAverageDecorator new
+							withLabel;
+							labelConvertion: [ :average | average asFloat round: 2  ]).
 
 	b axisX 
 		labelRotation: -30;
-		labelConversion: [ :v | (DateAndTime fromSeconds:  v + minDate asSeconds) ].
+		labelConversion: [ :v | (DateAndTime fromSeconds:  v + minDate asSeconds) asSpeedtestString ].
 
 	b axisXWithNumberOfTicks: self speedtests size.
 
