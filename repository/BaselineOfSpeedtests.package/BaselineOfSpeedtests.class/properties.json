@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSpeedtests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSpeedtests",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
