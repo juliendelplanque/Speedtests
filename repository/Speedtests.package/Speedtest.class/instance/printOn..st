@@ -1,7 +1,8 @@
 printing
 printOn: aStream
+	super printOn: aStream.
 	aStream
-		<< 'Date: ';
+		<< '(Date: ';
 		<< self printDateAndTime;
 		cr;
 		<< 'Ping: ';
@@ -12,4 +13,4 @@ printOn: aStream
 		cr;
 		<< 'UP: ';
 		<< self upload asString;
-		cr
+		<< $)
