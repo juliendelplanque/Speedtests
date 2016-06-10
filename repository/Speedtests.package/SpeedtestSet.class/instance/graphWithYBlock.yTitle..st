@@ -1,5 +1,5 @@
 roassal
-graphWithYBlock: aBlock
+graphWithYBlock: aBlock yTitle: aString
 	| minDate b ds |
 	minDate := self speedtests first dateAndTime.
 
@@ -17,10 +17,12 @@ graphWithYBlock: aBlock
 							withLabel;
 							labelConvertion: [ :average | average asFloat round: 2  ]).
 
-	b axisX 
+	b axisX
+		title: 'Time';
 		labelRotation: -30;
 		labelConversion: [ :v | (DateAndTime fromSeconds:  v + minDate asSeconds) asSpeedtestString ].
 
+	b axisY title: aString.
 	b axisXWithNumberOfTicks: self speedtests size.
 
 	b build.

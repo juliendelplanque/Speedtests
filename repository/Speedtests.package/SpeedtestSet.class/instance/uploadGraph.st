@@ -1,3 +1,3 @@
 roassal
 uploadGraph
-	^ self graphWithYBlock: #upload
+	^ self graphWithYBlock: #upload yTitle: 'Mbps'

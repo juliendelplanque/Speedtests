@@ -1,3 +1,3 @@
 roassal
 pingGraph
-	^ self graphWithYBlock: #ping
+	^ self graphWithYBlock: #ping yTitle: 'ms'

@@ -1,3 +1,3 @@
 roassal
 downloadGraph
-	^ self graphWithYBlock: #download
+	^ self graphWithYBlock: #download yTitle: 'Mbps'
